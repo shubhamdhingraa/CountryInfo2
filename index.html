@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CountryInfo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">CountryInfo</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    	<div class="jumbotron">
+	    	<h3 class="text-center">Search For Any Country</h3>
+	    	<form id="searchForm">
+	    		<input type="text" class="form-control" id="searchText" placeholder="Search Countries...">
+	    	</form>
+	    </div>
+    </div>
+
+    <div class="container">
+      <div id="countries" class="row"></div>
+    </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/main.js"></script>
+  <div class="container">
+      <div class="jumbotron">
+          <h6 class="text-center">Extra Features:</h6>
+          <p>1. Memoized(DP) Approach is taken into account, only one API call is needed for one query and then stored in session storage for later access. Latency Time reduced.</p>
+          <p>2. Error handling done for edge cases, in case no result for the provided query. Error handling for 404 status.</p>
+          <p>3. Bootstrap is used to style the web app</p>
+          <p>4. Code is commented</p>   
+          <p>4. Hosted on Google Firebase.</p>      
+        </div>
+      
+    <div class="jumbotron">
+      <h6 class="text-center">Tasks Done:</h6>
+      <p>1. The first page should have a search bar on top that should be used to search for any country by making an API call. You can use APIs from https://restcountries.eu/. :Done</p>
+      <p>2. The search results should be displayed on the same page as cards with the name and the
+        flag of the country, without refreshing the web page. :Done</p>
+      <p>3. On clicking a card, the app should redirect to a page that shows country details. Display
+        all interesting details that are returned by the API. You are free to design this page as you
+        see fit. :Done</p>
+      <p>4. The details page should have a link to go back to the previous page, where the search
+        results were displayed. :Done</p>
+      <p>5. Clean code and comments are highly appreciated. :Done</p>
+      <p>6. Bonus points for good error handling. :Done</p>
+      <p>7. Bonus points for adding interesting features as well. :Done</p>      
+    </div>
+  </div>
+
+  </body>
+  <script>goBack()</script>
+</html>
